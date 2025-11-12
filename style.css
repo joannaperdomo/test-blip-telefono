@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.phone {
+    width: 80vw; /* Phone width is 80% of the viewport width */
+    height: 100vh; /* Adjust this ratio to maintain the correct phone aspect ratio */
+    display: flex;
+    align-items: center;
+    
+    /* Set a max-size so it doesn't get ridiculously large on desktop */
+    max-width: 400px;
+    max-height: 750px; 
+    
+    background-image: url('assets/smartphone.svg'); 
+    background-position:center;
+    background-repeat: no-repeat;
+
+}
+
+.screen {
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.screen::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-wrapper {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  margin: 40px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.chat-sequence {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.chat-bubble {
+  width: 90%;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: appear 0.6s ease forwards;
+}
+
+/* position rules for sides */
+.chat-bubble.left {
+  align-self: flex-start;
+}
+
+.chat-bubble.right {
+  align-self: flex-end;
+}
+
+/* delays for sequential appearance */
+.chat-bubble:nth-child(1) { animation-delay: 0s; }
+.chat-bubble:nth-child(2) { animation-delay: 1s; }
+.chat-bubble:nth-child(3) { animation-delay: 2s; }
+
+/* fade + slide animation */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
