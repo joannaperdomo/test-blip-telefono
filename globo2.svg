@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 504 158">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #265caa;
+        filter: url(#drop-shadow-1);
+        stroke: #0096fa;
+        stroke-miterlimit: 10;
+        stroke-width: 2.64px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Inter-Medium, Inter;
+        font-size: 26.16px;
+        font-variation-settings: 'wght' 500, 'slnt' 0;
+        font-weight: 500;
+      }
+
+      .cls-3 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <filter id="drop-shadow-1" x="0" y="0" width="504" height="158" filterUnits="userSpaceOnUse">
+      <feOffset dx="13.18" dy="15.82"/>
+      <feGaussianBlur result="blur" stdDeviation="7.91"/>
+      <feFlood flood-color="#094b82" flood-opacity=".28"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="globo_2" data-name="globo 2">
+    <g>
+      <path class="cls-1" d="M460.33,9.97H37c-13.86,0-25.1,11.07-25.1,24.73v56.56c0,13.66,11.24,24.73,25.1,24.73h381.38c13.86,0,25.1-11.07,25.1-24.73v-52.29l20.29-21.12c2.86-2.97.72-7.87-3.44-7.87Z"/>
+      <text class="cls-2" transform="translate(52.51 75.1) scale(1.02 1)"><tspan x="0" y="0">Llego incor</tspan><tspan class="cls-3" x="138.28" y="0">r</tspan><tspan x="147.82" y="0">ec</tspan><tspan class="cls-4" x="178.04" y="0">t</tspan><tspan x="187.62" y="0">o mi pedido</tspan></text>
+    </g>
+  </g>
+</svg>
